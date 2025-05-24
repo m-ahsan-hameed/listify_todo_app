@@ -5,47 +5,50 @@ class CustomSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: InputDecoration(
-        label: Text("Search"),
-        labelStyle: TextStyle(
-          fontSize: 20,
-          color:
-              Theme.of(context).brightness == Brightness.dark
-                  ? Colors.white
-                  : Colors.black,
-        ),
-        hintText: "Search Todo",
-        border: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
+    return SizedBox(
+      height: 46,
+      child: TextFormField(
+        decoration: InputDecoration(
+          label: Text("Search"),
+          labelStyle: TextStyle(
+            fontSize: 20,
             color:
                 Theme.of(context).brightness == Brightness.dark
                     ? Colors.white
                     : Colors.black,
           ),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color:
-                Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : Colors.black,
+          hintText: "Search Todo",
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 1,
+              color:
+                  Theme.of(context).brightness == Brightness.dark
+                      ? Colors.white
+                      : Colors.black,
+            ),
+            borderRadius: BorderRadius.circular(20),
           ),
-          borderRadius: BorderRadius.circular(20),
-        ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 1,
+              color:
+                  Theme.of(context).brightness == Brightness.dark
+                      ? Colors.white
+                      : Colors.black,
+            ),
+            borderRadius: BorderRadius.circular(20),
+          ),
 
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1,
-            color:
-                Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : Colors.black,
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 1,
+              color:
+                  Theme.of(context).brightness == Brightness.dark
+                      ? Colors.white
+                      : Colors.black,
+            ),
+            borderRadius: BorderRadius.circular(20),
           ),
-          borderRadius: BorderRadius.circular(20),
         ),
       ),
     );

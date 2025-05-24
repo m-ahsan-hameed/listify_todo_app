@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/custom%20widgets/custom_text.dart';
 import 'package:todo_app/providerStates/theme_change.dart';
-import 'package:todo_app/widgets/category.dart';
 import 'package:todo_app/widgets/search_bar.dart';
 import 'package:todo_app/widgets/task_list.dart';
 
@@ -68,14 +67,6 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               CustomText(text: "Welcome Ahsan,"),
 
-              SizedBox(height: 10),
-              CustomText(
-                text: "CATEGORIES",
-                size: 20,
-                fontWeight: FontWeight.w600,
-              ),
-              SizedBox(height: 5),
-              SizedBox(height: 110, child: CategoryWidget()),
               SizedBox(height: 20),
               CustomSearchBar(),
               SizedBox(height: 20),

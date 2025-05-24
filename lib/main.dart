@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/constants/colors.dart';
+import 'package:todo_app/providerStates/tasks.dart';
 import 'package:todo_app/providerStates/theme_change.dart';
-import 'package:todo_app/screens/add_task_screen.dart';
-import 'package:todo_app/screens/home.dart';
+import 'package:todo_app/screens/bottom_navigation.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => ThemeChange())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => ThemeChange()),
+        ChangeNotifierProvider(create: (_) => Tasks()),
+      ],
       child: Builder(
         builder: (BuildContext context) {
           final themeChange = Provider.of<ThemeChange>(context);
@@ -51,7 +54,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            home: AddTaskScreen(),
+            home: BottomNavigation(),
           );
         },
       ),
