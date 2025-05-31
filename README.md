@@ -1,40 +1,45 @@
-📱 Listify – ToDo App
-📝 Description
+**📱 Listify – ToDo App**
+
+**📝 Description**
+
 Listify is a clean, intuitive ToDo app built using Flutter. It helps users manage tasks efficiently through categorized task lists and a minimal, modern UI. The app also supports dark mode for a better user experience in different lighting conditions.
 
-💡 Features
-🔍 Search & Profile Icons on the Home Screen
 
-🗂️ Task Lists with clean design and status display
+**💡 Features**
 
-📚 Category Screen with a grid-based layout
+- 🔍 Search & Profile Icons on the Home Screen
 
-➕ Add New Category functionality
+- 🗂️ Task Lists with clean design and status display
 
-📝 Add New Task with:
+- 📚 Category Screen with a grid-based layout
 
-Title
+- ➕ Add New Category functionality
 
-Description
+**📝 Add New Task with:**
 
-Detail
+- Title
 
-Subtasks
+- Description
 
-🌙 Dark Mode support
+- Detail
 
-🛠️ Tech Stack
-Framework: Flutter
+- Subtasks
 
-Language: Dart
+- 🌙 Dark Mode support
 
-State Management: setState (or mention Provider if used)
+**🛠️ Tech Stack**
 
-Backend: Not implemented (UI only)
+- Framework: Flutter
 
-📌 Notes
-This app is frontend-only; no backend integration.
+- Language: Dart
 
-Designed with clean UI and dark/light theme support.
+- State Management: setState (or mention Provider if used)
 
-Ideal for demonstrating Flutter UI/UX skills in portfolio or internship applications.
+- Backend: Not implemented (UI only)
+
+**📌 Notes**
+- This app is frontend-only; no backend integration.
+
+- Designed with clean UI and dark/light theme support.
+
+- Ideal for demonstrating Flutter UI/UX skills in portfolio or internship applications.
